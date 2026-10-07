@@ -22,10 +22,14 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My message, and why:
+# 1. In: "i love museums" numbered five times.
+# 2. Process: adding a line in front of each one.
+# 3. Out: five numbered lines from 1 to 5 each showing the message.
+# 4. My message, and why: "i love museums" because every visit teaches me something new.
 
 
 # Your code below
+message = "i love museums"
+number = 5
+for i in range(1, 5 + 1):
+    print(f"{i}: {message}")
