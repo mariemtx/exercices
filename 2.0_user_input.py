@@ -26,10 +26,20 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My two fields, and what I would do with them:
+# 1. In:the name of a retail brand and the numbers of stores to equip
+# 2. Process:convert the number of stores into an integer and add 1 for the pilot store we test first
+# 3. Out: a sentence summarising the deployment to plan
+# 4. My two fields, and what I would do with them: at ADEIZ, we deploy our unified commerce platform in retail chains. 
+# Before a rpoject i need the brand name and how many stores are concerned, to plan the deployment and the teams needed.
 
+# Check it yourself:
+# empty line: ValueError: invalid literal for int() with base 10: ''
+# space: ValueError: invalid literal for int() with base 10: ' '
+# text ("dix"): ValueError: invalid literal for int() with base 10: 'text'
+# the program crashes because int() can only convert text that contains digits
 
 # Your code below
+brand = input("Enter the retail brand name: ")
+stores = int(input("Number of stores to equip: "))
+total = stores + 1  # Add 1 for the pilot store
+print(f"ADEIZ deployment for {brand}: with {total} stores.")
