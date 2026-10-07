@@ -31,5 +31,5 @@ DELIVERABLE
 # Your code below
 message = "i love museums"
 number = 5
-for i in range(1, 5 + 1):
+for i in range(1, number + 1):
     print(f"{i}: {message}")
